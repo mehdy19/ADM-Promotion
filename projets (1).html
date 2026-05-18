@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مشاريع ADM PROMOTION السكنية - اكتشف مساكننا الفاخرة في الجزائر.">
+    <title>ADM PROMOTION | المشاريع السكنية</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body dir="rtl">
+
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">ADM</div>
+                <div class="logo-text">PROMOTION</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="a-propos.html" class="nav-link">من نحن</a></li>
+                <li><a href="projets.html" class="nav-link active">المشاريع</a></li>
+                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <a href="projets.html" class="lang-btn active" data-lang="ar">عربي</a>
+                <a href="../fr/projets.html" class="lang-btn" data-lang="fr">FR</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="القائمة">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <button class="mobile-menu-close">&times;</button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="a-propos.html">من نحن</a></li>
+            <li><a href="projets.html" class="active">المشاريع</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+        <div class="mobile-lang-switcher">
+            <a href="projets.html" class="lang-btn active" data-lang="ar">العربية</a>
+            <a href="../fr/projets.html" class="lang-btn" data-lang="fr">Français</a>
+        </div>
+    </div>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <h1>المشاريع السكنية</h1>
+            <div class="breadcrumb-nav">
+                <a href="index.html">الرئيسية</a>
+                <span class="separator">/</span>
+                <span>المشاريع</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="padding-bottom: 20px;">
+        <div class="container">
+            <div class="section-header animate">
+                <span class="section-tag">الكتالوج</span>
+                <h2 class="section-title">اكتشف <span class="text-red">مساكننا</span></h2>
+                <p class="section-description">
+                    استكشف مجموعتنا من المشاريع السكنية المصممة بعناية لتلبية كل التطلعات.
+                </p>
+            </div>
+
+            <div class="tabs" style="justify-content: center;">
+                <button class="tab-btn active" data-filter="all">الكل</button>
+                <button class="tab-btn" data-filter="selling">في البيع</button>
+                <button class="tab-btn" data-filter="constructing">قيد الإنجاز</button>
+                <button class="tab-btn" data-filter="completed">مسلّمة</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="padding-top: 20px;">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card filter-item animate" data-category="selling">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80" alt="إقامة الحدائق" loading="lazy">
+                        <span class="project-status status-selling">في البيع</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">عرض المشروع</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>إقامة الحدائق</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>حيدرة، الجزائر</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">ابتداءً من 85 مليون دج</span>
+                            <span class="project-type">F3 - F4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card filter-item animate animate-delay-1" data-category="constructing">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="إقامة الجزائر" loading="lazy">
+                        <span class="project-status status-constructing">قيد الإنجاز</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">عرض المشروع</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>إقامة الجزائر</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>باب الزوار، الجزائر</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">ابتداءً من 65 مليون دج</span>
+                            <span class="project-type">F3 - F5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card filter-item animate animate-delay-2" data-category="completed">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=600&q=80" alt="إقامة النور" loading="lazy">
+                        <span class="project-status status-completed">مسلّمة</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">عرض المشروع</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>إقامة النور</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>دالي إبراهيم، الجزائر</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">ابتداءً من 95 مليون دج</span>
+                            <span class="project-type">F4 - F5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card filter-item animate" data-category="selling">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="إقامة الأفق" loading="lazy">
+                        <span class="project-status status-selling">في البيع</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">عرض المشروع</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>إقامة الأفق</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>سطاوالي، الجزائر</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">ابتداءً من 55 مليون دج</span>
+                            <span class="project-type">F2 - F4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card filter-item animate animate-delay-1" data-category="constructing">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="إقامة الواحة" loading="lazy">
+                        <span class="project-status status-constructing">قيد الإنجاز</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">عرض المشروع</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>إقامة الواحة</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>بئر خادم، الجزائر</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">ابتداءً من 75 مليون دج</span>
+                            <span class="project-type">F3 - F4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card filter-item animate animate-delay-2" data-category="completed">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="إقامة النجمة" loading="lazy">
+                        <span class="project-status status-completed">مسلّمة</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">عرض المشروع</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>إقامة النجمة</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>الأبيار، الجزائر</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">ابتداءً من 110 مليون دج</span>
+                            <span class="project-type">F4 - F5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="animate">لم تجد ما تبحث عنه؟</h2>
+            <p class="animate animate-delay-1">
+                تواصل معنا لاكتشاف مشاريعنا القادمة وعروضنا الحصرية المخصصة لعملائنا المميزين.
+            </p>
+            <div class="animate animate-delay-2">
+                <a href="contact.html" class="btn btn-white">
+                    <i class="fas fa-phone"></i> تواصل معنا
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-text">ADM <span>PROMOTION</span></a>
+                    <p>شركة الترقية العقارية المرجعية في الجزائر. نخلق مساحات معيشة استثنائية منذ أكثر من 15 سنة.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="إنستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">التصفح</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="a-propos.html">من نحن</a></li>
+                        <li><a href="projets.html">مشاريعنا</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">خدماتنا</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">الترقية العقارية</a></li>
+                        <li><a href="#">استشارة استثمارية</a></li>
+                        <li><a href="#">إدارة الممتلكات</a></li>
+                        <li><a href="#">هندسة وتصميم</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <a href="tel:0798246725">07.98.24.67.25</a><br>
+                            <a href="tel:046838235">046.83.82.35</a><br>
+                            <a href="tel:0791792312">0791.79.23.12</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:ADM.PROMOTIONNEL@GMAIL.COM">ADM.PROMOTIONNEL@GMAIL.COM</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>المقر الرئيسي - الجزائر العاصمة</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2024</span> ADM PROMOTION. جميع الحقوق محفوظة.</p>
+                <p class="footer-arabic-text">شركة الترقية العقارية - عدة مداني</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="العودة للأعلى"><i class="fas fa-arrow-up"></i></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>

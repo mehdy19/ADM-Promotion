@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets Résidentiels ADM PROMOTION - Découvrez nos résidences de luxe en Algérie.">
+    <title>ADM PROMOTION | Nos Projets Résidentiels</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body dir="ltr">
+
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">ADM</div>
+                <div class="logo-text">PROMOTION</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="a-propos.html" class="nav-link">À Propos</a></li>
+                <li><a href="projets.html" class="nav-link active">Projets</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <a href="../ar/projets.html" class="lang-btn" data-lang="ar">AR</a>
+                <a href="projets.html" class="lang-btn active" data-lang="fr">FR</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <button class="mobile-menu-close">&times;</button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="projets.html" class="active">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-lang-switcher">
+            <a href="../ar/projets.html" class="lang-btn" data-lang="ar">العربية</a>
+            <a href="projets.html" class="lang-btn active" data-lang="fr">Français</a>
+        </div>
+    </div>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <h1>Nos Projets Résidentiels</h1>
+            <div class="breadcrumb-nav">
+                <a href="index.html">Accueil</a>
+                <span class="separator">/</span>
+                <span>Projets</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="section-padding" style="padding-bottom: 20px;">
+        <div class="container">
+            <div class="section-header animate">
+                <span class="section-tag">Catalogue</span>
+                <h2 class="section-title">Découvrez Nos <span class="text-red">Résidences</span></h2>
+                <p class="section-description">
+                    Explorez notre sélection de projets résidentiels soigneusement conçus 
+                    pour répondre à toutes les aspirations.
+                </p>
+            </div>
+
+            <div class="tabs" style="justify-content: center;">
+                <button class="tab-btn active" data-filter="all">Tous</button>
+                <button class="tab-btn" data-filter="selling">En Vente</button>
+                <button class="tab-btn" data-filter="constructing">En Construction</button>
+                <button class="tab-btn" data-filter="completed">Livrés</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section-padding" style="padding-top: 20px;">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card filter-item animate" data-category="selling">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80" alt="Résidence Les Jardins" loading="lazy">
+                        <span class="project-status status-selling">En Vente</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">Voir le Projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Résidence Les Jardins</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>Hydra, Alger</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">À partir de 85M DA</span>
+                            <span class="project-type">F3 - F4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card filter-item animate animate-delay-1" data-category="constructing">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="Résidence El Djazair" loading="lazy">
+                        <span class="project-status status-constructing">En Construction</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">Voir le Projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Résidence El Djazair</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>Bab Ezzouar, Alger</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">À partir de 65M DA</span>
+                            <span class="project-type">F3 - F5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card filter-item animate animate-delay-2" data-category="completed">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=600&q=80" alt="Résidence Lumière" loading="lazy">
+                        <span class="project-status status-completed">Livré</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">Voir le Projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Résidence Lumière</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>Dely Ibrahim, Alger</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">À partir de 95M DA</span>
+                            <span class="project-type">F4 - F5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card filter-item animate" data-category="selling">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Résidence Horizon" loading="lazy">
+                        <span class="project-status status-selling">En Vente</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">Voir le Projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Résidence Horizon</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>Staoueli, Alger</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">À partir de 55M DA</span>
+                            <span class="project-type">F2 - F4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card filter-item animate animate-delay-1" data-category="constructing">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Résidence Oasis" loading="lazy">
+                        <span class="project-status status-constructing">En Construction</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">Voir le Projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Résidence Oasis</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>Birkhadem, Alger</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">À partir de 75M DA</span>
+                            <span class="project-type">F3 - F4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card filter-item animate animate-delay-2" data-category="completed">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Résidence Étoile" loading="lazy">
+                        <span class="project-status status-completed">Livré</span>
+                        <div class="project-overlay">
+                            <a href="projet-detail.html" class="project-overlay-btn">Voir le Projet</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Résidence Étoile</h3>
+                        <div class="project-location">
+                            <i class="fas fa-map-marker-alt text-red"></i>
+                            <span>El Biar, Alger</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-price">À partir de 110M DA</span>
+                            <span class="project-type">F4 - F5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="animate">Vous ne trouvez pas ce que vous cherchez ?</h2>
+            <p class="animate animate-delay-1">
+                Contactez-nous pour découvrir nos projets à venir et nos offres exclusives 
+                réservées à nos clients privilégiés.
+            </p>
+            <div class="animate animate-delay-2">
+                <a href="contact.html" class="btn btn-white">
+                    <i class="fas fa-phone"></i> Nous Contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-text">ADM <span>PROMOTION</span></a>
+                    <p>Société de Promotion Immobilière de référence en Algérie. Nous créons des espaces de vie exceptionnels depuis plus de 15 ans.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="projets.html">Nos Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Promotion Immobilière</a></li>
+                        <li><a href="#">Conseil en Investissement</a></li>
+                        <li><a href="#">Gestion de Patrimoine</a></li>
+                        <li><a href="#">Architecture & Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <a href="tel:0798246725">07.98.24.67.25</a><br>
+                            <a href="tel:046838235">046.83.82.35</a><br>
+                            <a href="tel:0791792312">0791.79.23.12</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:ADM.PROMOTIONNEL@GMAIL.COM">ADM.PROMOTIONNEL@GMAIL.COM</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Siège Social - Alger, Algérie</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="current-year">2024</span> ADM PROMOTION. Tous droits réservés.</p>
+                <p class="footer-arabic-text">شركة الترقية العقارية - عدة مداني</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>
