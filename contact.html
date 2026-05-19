@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fr" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — ADM Promotion</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { red: '#B91C1C', dark: '#1a1a1a', grey: '#4a4a4a' }
+          },
+          fontFamily: { mont: ['Montserrat', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+<base target="_blank">
+</head>
+<body class="h-full overflow-auto bg-white">
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center">
+            <svg viewBox="0 0 40 40" class="w-8 h-8">
+              <path d="M20 5 L35 18 L35 35 L25 35 L25 25 L15 25 L15 35 L5 35 L5 18 Z" fill="white" stroke="white" stroke-width="1" />
+            </svg>
+          </div>
+          <div>
+            <span class="text-xl font-bold text-brand-dark tracking-tight">ADM</span>
+            <span class="text-xs block text-brand-grey font-medium -mt-1">PROMOTION</span>
+          </div>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="nav-link text-sm font-semibold uppercase tracking-wider  text-brand-grey">Accueil</a>
+      <a href="a-propos.html" class="nav-link text-sm font-semibold uppercase tracking-wider  text-brand-grey">À Propos</a>
+      <a href="projets.html" class="nav-link text-sm font-semibold uppercase tracking-wider  text-brand-grey">Projets</a>
+      <a href="contact.html" class="nav-link text-sm font-semibold uppercase tracking-wider active text-brand-dark">Contact</a>
+        </div>
+        <button class="md:hidden" onclick="toggleMobile()">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-6">
+      <div class="flex flex-col gap-4">
+      <a href="index.html" class="text-sm font-semibold uppercase tracking-wider cursor-pointer text-brand-grey">Accueil</a>
+      <a href="a-propos.html" class="text-sm font-semibold uppercase tracking-wider cursor-pointer text-brand-grey">À Propos</a>
+      <a href="projets.html" class="text-sm font-semibold uppercase tracking-wider cursor-pointer text-brand-grey">Projets</a>
+      <a href="contact.html" class="text-sm font-semibold uppercase tracking-wider cursor-pointer text-brand-dark">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- PAGE: CONTACT -->
+  <div id="page-contact" class="page active">
+    <section class="pt-32 pb-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <span class="text-xs font-bold uppercase tracking-[0.3em] text-brand-red mb-4 block">Contact</span>
+        <h1 class="text-4xl md:text-5xl font-bold text-brand-dark mb-4">Contactez-nous</h1>
+        <p class="text-brand-grey text-lg mb-12">Prenez rendez-vous ou demandez des informations sur nos projets.</p>
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Form -->
+          <div>
+            <form id="contactForm" class="space-y-5" onsubmit="handleContactSubmit(event)">
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label for="fname" class="text-sm font-medium text-brand-dark mb-1 block">Prénom</label>
+                  <input id="fname" type="text" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none transition-all" placeholder="Votre prénom">
+                </div>
+                <div>
+                  <label for="lname" class="text-sm font-medium text-brand-dark mb-1 block">Nom</label>
+                  <input id="lname" type="text" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none transition-all" placeholder="Votre nom">
+                </div>
+              </div>
+              <div>
+                <label for="email" class="text-sm font-medium text-brand-dark mb-1 block">Email</label>
+                <input id="email" type="email" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none transition-all" placeholder="votre@email.com">
+              </div>
+              <div>
+                <label for="phone" class="text-sm font-medium text-brand-dark mb-1 block">Téléphone</label>
+                <input id="phone" type="tel" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none transition-all" placeholder="07.XX.XX.XX.XX">
+              </div>
+              <div>
+                <label for="project" class="text-sm font-medium text-brand-dark mb-1 block">Projet intéressé</label>
+                <select id="project" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none transition-all bg-white">
+                  <option value="">Sélectionner un projet</option>
+                  <option>Résidence El Yasmine - Blida</option>
+                  <option>Résidence Les Oliviers - Alger</option>
+                  <option>Résidence El Baraka - Boumerdès</option>
+                  <option>Autre / Information générale</option>
+                </select>
+              </div>
+              <div>
+                <label for="message" class="text-sm font-medium text-brand-dark mb-1 block">Message</label>
+                <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red outline-none transition-all resize-none" placeholder="Votre message..."></textarea>
+              </div>
+              <button type="submit" class="w-full px-6 py-4 bg-brand-red text-white font-semibold rounded-lg hover:bg-red-800 transition-all duration-300">Envoyer le message</button>
+              <div id="formSuccess" class="hidden text-green-600 text-sm font-medium text-center p-3 bg-green-50 rounded-lg">
+                ✓ Message envoyé avec succès ! Nous vous recontacterons sous 24h.
+              </div>
+            </form>
+          </div>
+          <!-- Contact Info -->
+          <div class="space-y-8">
+            <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+              <h3 class="text-lg font-bold text-brand-dark mb-6">Nos Coordonnées</h3>
+              <div class="space-y-5">
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="phone" class="w-5 h-5 text-brand-red"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-dark text-sm">Téléphones</p>
+                    <p class="text-brand-grey text-sm">07.98.24.67.25</p>
+                    <p class="text-brand-grey text-sm">046.83.82.35</p>
+                    <p class="text-brand-grey text-sm">0791.79.23.12</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="mail" class="w-5 h-5 text-brand-red"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-dark text-sm">Email</p>
+                    <p class="text-brand-grey text-sm">ADM.PROMOTIONNEL@GMAIL.COM</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-brand-red/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-brand-red"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-brand-dark text-sm">Adresse</p>
+                    <p class="text-brand-grey text-sm">Algérie</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+              <h3 class="text-lg font-bold text-brand-dark mb-4">Prendre Rendez-vous</h3>
+              <p class="text-brand-grey text-sm mb-4">Visitez nos bureaux ou planifiez une visite de nos projets sur site.</p>
+              <p class="text-sm text-brand-grey"><strong>Horaires :</strong> Dimanche - Jeudi, 9h00 - 17h00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark text-white py-16">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-brand-red rounded-lg flex items-center justify-center">
+              <svg viewBox="0 0 40 40" class="w-6 h-6">
+                <path d="M20 5 L35 18 L35 35 L25 35 L25 25 L15 25 L15 35 L5 35 L5 18 Z" fill="white" />
+              </svg>
+            </div>
+            <div>
+              <span class="text-lg font-bold">ADM</span><span class="text-xs block text-white/60 -mt-1">PROMOTION</span>
+            </div>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed">Entreprise de Promotion Immobilière. Qualité, innovation et expertise au service de votre avenir.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider">Navigation</h4>
+          <div class="space-y-2">
+            <a href="index.html" class="text-white/50 text-sm cursor-pointer hover:text-white transition-colors block">Accueil</a>
+            <a href="a-propos.html" class="text-white/50 text-sm cursor-pointer hover:text-white transition-colors block">À Propos</a>
+            <a href="projets.html" class="text-white/50 text-sm cursor-pointer hover:text-white transition-colors block">Projets</a>
+            <a href="contact.html" class="text-white/50 text-sm cursor-pointer hover:text-white transition-colors block">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
+          <div class="space-y-2 text-white/50 text-sm">
+            <p>07.98.24.67.25</p>
+            <p>046.83.82.35</p>
+            <p>ADM.PROMOTIONNEL@GMAIL.COM</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4 text-sm uppercase tracking-wider">Suivez-nous</h4>
+          <div class="flex gap-3">
+            <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-red transition-colors cursor-pointer">
+              <i data-lucide="facebook" class="w-5 h-5"></i>
+            </div>
+            <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-red transition-colors cursor-pointer">
+              <i data-lucide="instagram" class="w-5 h-5"></i>
+            </div>
+            <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-red transition-colors cursor-pointer">
+              <i data-lucide="phone" class="w-5 h-5"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/10 pt-8 text-center">
+        <p class="text-white/40 text-sm">© 2024 ADM Promotion — Edda Madani. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
