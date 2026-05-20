@@ -31,10 +31,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         <a href="index.html" class="flex items-center gap-3">
-          <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center">
-            <svg viewBox="0 0 40 40" class="w-8 h-8">
-              <path d="M20 5 L35 18 L35 35 L25 35 L25 25 L15 25 L15 35 L5 35 L5 18 Z" fill="white" stroke="white" stroke-width="1" />
-            </svg>
+          <div class="w-12 h-12 rounded-lg overflow-hidden bg-white flex items-center justify-center">
+            <img src="https://i.ibb.co/Y4cpwZPm/logo-adm.png" alt="ADM Promotion" class="object-contain w-full h-full" />
           </div>
           <div>
             <span class="text-xl font-bold text-brand-dark tracking-tight">ADM</span>
@@ -67,96 +65,35 @@
   <!-- PAGE: PROJETS -->
   <div id="page-projets" class="page active">
     <section class="pt-32 pb-20 bg-white">
-      <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col items-center">
         <span class="text-xs font-bold uppercase tracking-[0.3em] text-brand-red mb-4 block">Nos Réalisations</span>
         <h1 class="text-4xl md:text-5xl font-bold text-brand-dark mb-4">Projets Résidentiels</h1>
         <p class="text-brand-grey text-lg mb-12">Découvrez notre portfolio d'appartements F3 & F4 à vendre dans les meilleures localisations.</p>
-        <div class="grid md:grid-cols-2 gap-8" id="projectGrid">
-          <!-- Project 1 -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div class="relative aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-              <i data-lucide="building" class="w-20 h-20 text-gray-400"></i>
-              <span class="absolute top-4 right-4 text-xs font-bold text-white bg-green-600 px-3 py-1 rounded-full">En Cours de Vente</span>
+        <div class="flex flex-wrap justify-center gap-8" id="projectGrid">
+          <div class="project-card w-full sm:w-80 md:w-96 fade-up group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer" onclick="location.href='projets.html'">
+            <div class="relative aspect-[4/3] overflow-hidden bg-gray-100">
+              <img src="https://i.ibb.co/5PQz2j4/palmiers1.jpg" alt="Résidence Les Palmiers" class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="project-overlay absolute inset-0 bg-brand-red/80 flex items-center justify-center opacity-0 transition-opacity duration-300">
+                <span class="text-white font-semibold">Voir le projet</span>
+              </div>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold text-brand-dark mb-2">Résidence El Yasmine</h3>
-              <div class="flex items-center gap-2 text-sm text-brand-grey mb-4">
-                <i data-lucide="map-pin" class="w-4 h-4"></i>Blida, Algérie
-              </div>
-              <p class="text-brand-grey text-sm mb-4">Appartements F3 & F4 de standing avec parking sous-sol, espaces verts et sécurité 24h/24.</p>
-              <div class="flex gap-4 text-sm text-brand-grey mb-6">
-                <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-3 h-3"></i>75-110 m²</span>
-                <span class="flex items-center gap-1"><i data-lucide="layers" class="w-3 h-3"></i>R+5</span>
-              </div>
-              <div class="flex gap-3">
-                <button onclick="showProjectDetail('yasmine')" class="flex-1 px-4 py-3 bg-brand-red text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors">Voir les détails</button>
-                <button class="px-4 py-3 border border-gray-200 text-brand-grey text-sm font-semibold rounded-lg hover:bg-gray-50 transition-colors"><i data-lucide="download" class="w-4 h-4 inline"></i></button>
-              </div>
+              <span class="text-xs font-bold text-green-600 bg-green-50 px-3 py-1 rounded-full">En Cours de Vente</span>
+              <h3 class="text-lg font-bold text-brand-dark mt-3">Résidence Les Palmiers</h3>
+              <p class="text-sm text-brand-grey mt-1">Relizane — Appartements F3 & F4</p>
             </div>
           </div>
-          <!-- Project 2 -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div class="relative aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-              <i data-lucide="building" class="w-20 h-20 text-gray-400"></i>
-              <span class="absolute top-4 right-4 text-xs font-bold text-white bg-blue-600 px-3 py-1 rounded-full">En Construction</span>
+          <div class="project-card w-full sm:w-80 md:w-96 fade-up group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer" onclick="location.href='projets.html'">
+            <div class="relative aspect-[4/3] overflow-hidden bg-gray-100">
+              <img src="https://i.ibb.co/jn8SyHZ/acil.jpg" alt="Résidence Al Acil" class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="project-overlay absolute inset-0 bg-brand-red/80 flex items-center justify-center opacity-0 transition-opacity duration-300">
+                <span class="text-white font-semibold">Voir le projet</span>
+              </div>
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold text-brand-dark mb-2">Résidence Les Oliviers</h3>
-              <div class="flex items-center gap-2 text-sm text-brand-grey mb-4">
-                <i data-lucide="map-pin" class="w-4 h-4"></i>Alger, Algérie
-              </div>
-              <p class="text-brand-grey text-sm mb-4">Programme résidentiel moderne offrant des appartements F3 & F4 avec vue panoramique et commodités premium.</p>
-              <div class="flex gap-4 text-sm text-brand-grey mb-6">
-                <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-3 h-3"></i>80-120 m²</span>
-                <span class="flex items-center gap-1"><i data-lucide="layers" class="w-3 h-3"></i>R+8</span>
-              </div>
-              <div class="flex gap-3">
-                <button onclick="showProjectDetail('oliviers')" class="flex-1 px-4 py-3 bg-brand-red text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors">Voir les détails</button>
-                <button class="px-4 py-3 border border-gray-200 text-brand-grey text-sm font-semibold rounded-lg hover:bg-gray-50 transition-colors"><i data-lucide="download" class="w-4 h-4 inline"></i></button>
-              </div>
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div class="relative aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-              <i data-lucide="building" class="w-20 h-20 text-gray-400"></i>
-              <span class="absolute top-4 right-4 text-xs font-bold text-white bg-gray-600 px-3 py-1 rounded-full">Livré</span>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-brand-dark mb-2">Résidence El Nour</h3>
-              <div class="flex items-center gap-2 text-sm text-brand-grey mb-4">
-                <i data-lucide="map-pin" class="w-4 h-4"></i>Tipaza, Algérie
-              </div>
-              <p class="text-brand-grey text-sm mb-4">Résidence livrée avec succès. Appartements F3 spacieux dans un cadre verdoyant à proximité de la mer.</p>
-              <div class="flex gap-4 text-sm text-brand-grey mb-6">
-                <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-3 h-3"></i>70-95 m²</span>
-                <span class="flex items-center gap-1"><i data-lucide="layers" class="w-3 h-3"></i>R+4</span>
-              </div>
-              <div class="flex gap-3">
-                <button onclick="showProjectDetail('nour')" class="flex-1 px-4 py-3 bg-brand-dark text-white text-sm font-semibold rounded-lg hover:bg-gray-800 transition-colors">Voir les détails</button>
-              </div>
-            </div>
-          </div>
-          <!-- Project 4 -->
-          <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
-            <div class="relative aspect-video bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-              <i data-lucide="building" class="w-20 h-20 text-gray-400"></i>
-              <span class="absolute top-4 right-4 text-xs font-bold text-white bg-green-600 px-3 py-1 rounded-full">En Cours de Vente</span>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold text-brand-dark mb-2">Résidence El Baraka</h3>
-              <div class="flex items-center gap-2 text-sm text-brand-grey mb-4">
-                <i data-lucide="map-pin" class="w-4 h-4"></i>Boumerdès, Algérie
-              </div>
-              <p class="text-brand-grey text-sm mb-4">Nouveau programme résidentiel avec appartements F4 de grand standing, parking et aires de jeux pour enfants.</p>
-              <div class="flex gap-4 text-sm text-brand-grey mb-6">
-                <span class="flex items-center gap-1"><i data-lucide="maximize" class="w-3 h-3"></i>90-130 m²</span>
-                <span class="flex items-center gap-1"><i data-lucide="layers" class="w-3 h-3"></i>R+6</span>
-              </div>
-              <div class="flex gap-3">
-                <button onclick="showProjectDetail('baraka')" class="flex-1 px-4 py-3 bg-brand-red text-white text-sm font-semibold rounded-lg hover:bg-red-800 transition-colors">Voir les détails</button>
-                <button class="px-4 py-3 border border-gray-200 text-brand-grey text-sm font-semibold rounded-lg hover:bg-gray-50 transition-colors"><i data-lucide="download" class="w-4 h-4 inline"></i></button>
-              </div>
+              <span class="text-xs font-bold text-red-600 bg-red-50 px-3 py-1 rounded-full">Terminé</span>
+              <h3 class="text-lg font-bold text-brand-dark mt-3">Résidence Al Acil</h3>
+              <p class="text-sm text-brand-grey mt-1">Relizane — Appartements F3 & F4</p>
             </div>
           </div>
         </div>
